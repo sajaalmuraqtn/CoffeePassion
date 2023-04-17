@@ -105,6 +105,7 @@ header .nav-link:hover::after {
 
 /* end header */
 /* start À la Carte */
+
 .la_Carte h2{
   Font-size: 98px;
 Font-weight: 600;
@@ -167,3 +168,47 @@ Line-height: 66px;
 }
 
 /* end All-day Brunch */
+
+/* start followUs */
+.followUs {
+  position: relative;
+
+}
+.followUs .follow{
+  width: 270px;
+  height: 270px;
+  cursor: pointer;
+  position: absolute;
+}
+.followUs .follow a{
+Font-size: 26px;
+Font-weight: 500;
+Line-height: 33.8px;
+color: var(--main-color);
+}
+/* end followUs */
+
+/* start our story */
+.ourStory .row{ 
+  height: 100vh;
+}
+ .ourStory .divider-grass {
+  height: 100%;
+  width: 50px;
+  color: #c8c4c5;
+
+}
+
+ .ourStory .divider-grass .pt-vd-icon svg{
+  color: #c8c4c5;
+}
+
+ .ourStory .divider-grass .pt-vd-line {
+  position: relative;
+  width: 1px;
+  height: 100%;
+  margin-left: 12px;
+  background-color: #c8c4c5;
+}
+
+/* end our story */
