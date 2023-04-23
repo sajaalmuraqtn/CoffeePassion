@@ -1,3 +1,22 @@
+/*
+<span class="loader"></span>
+.loader {
+  width: 48px;
+  height: 40px;
+  margin-top: 30px;
+  display: inline-block;
+  position: relative;
+  background: #FFF;
+  border-radius: 15% 15% 35% 35%;
+}
+
+
+*/
+
+
+
+
+
 var allbrunch = document.getElementById("allbrunch");
 
 var menuFood = [
