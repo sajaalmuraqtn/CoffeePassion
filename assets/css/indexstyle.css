@@ -67,6 +67,10 @@ header .nav-link::after {
   left: 0;
   transition: 0.5s;
 }
+header .active::after {
+  width: 100%;
+  
+}
 
 header .nav-link:hover::after {
   width: 100%;
@@ -301,6 +305,25 @@ font-size: 66px;
   background: none;
   border: none;
  }
+
+ .visitUs input:focus{
+    /*we give him focus to when we click on the input give the elements this Properties*/
+    box-shadow: none !important;
+    border: 1px solid #0d0909 !important;
+}
+::placeholder {
+    /* to give the placeholder this properties*/
+    color:white !important;
+    text-transform: capitalize;
+     
+}
+.visitUs .agree-to-terms a{
+  color:white;
+}
+
+ .visitUs .agree-to-terms a:hover{
+   color:var(--main-color);
+}
 
 
 /* end visit us */

@@ -1,0 +1,94 @@
+/* my fonts */
+/*  JOST : font-family: 'Jost', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*  font-family: 'Cormorant Garamond', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 60px;
+}
+
+:root {
+    --main-color: #c59764;
+}
+
+
+/* start header */
+.header {
+    background-image: url(../images/home/RESERVATION.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: 200%;
+    background-position-y: 80%;
+}
+
+.header h1 {
+    font-size: 80px;
+    Font-weight: 600;
+    font-family: 'Cormorant Garamond', serif;
+    Line-height: 80px;
+    margin-top: 120px;
+}
+
+/* end header */
+
+/*  start contact  */
+.ONLINERESERVATION {
+    color: black;
+    height: 110vh;
+}
+
+.ONLINERESERVATION span {
+    color: var(--main-color);
+    Font-size: 18px;
+    Font-weight: 600;
+    Line-height: 29.88px;
+}
+
+.ONLINERESERVATION h2 {
+    Font-size: 66px;
+    Font-weight: 600;
+    Line-height: 66px;
+}
+
+.ONLINERESERVATION p {
+    Font-size: 18px;
+    Font-weight: 400;
+    Line-height: 29.88px;
+    color: rgb(54, 54, 54);
+}
+
+.ONLINERESERVATION input:focus,
+.ONLINERESERVATION textarea:focus{
+    /*we give him focus to when we click on the input give the elements this Properties*/
+    box-shadow: none !important;
+    border: 1px solid #0d0909 !important;
+}
+
+.ONLINERESERVATION ::placeholder {
+    /* to give the placeholder this properties*/
+    color: black !important;
+    text-transform: capitalize;
+
+}
+.ONLINERESERVATION a{
+    background-color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 45px;
+    padding: 8px;
+    transition: 0.5s;
+  }
+
+/*  end contact  */
