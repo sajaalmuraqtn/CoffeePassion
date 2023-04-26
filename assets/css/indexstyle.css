@@ -11,7 +11,10 @@
   box-sizing: border-box;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Cormorant Garamond', serif;
   line-height: 60px;
 }
@@ -19,8 +22,9 @@ h1,h2,h3,h4 {
 :root {
   --main-color: #c59764;
 }
+
 /* start loading screen */
-.loading{
+.loading {
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -30,6 +34,7 @@ h1,h2,h3,h4 {
   z-index: 9999;
   background-color: rgb(0, 0, 0)
 }
+
 .loader {
   width: 48px;
   height: 40px;
@@ -39,8 +44,9 @@ h1,h2,h3,h4 {
   background: var(--main-color);
   border-radius: 15% 15% 35% 35%;
 }
+
 .loader::after {
-  content: '';  
+  content: '';
   box-sizing: border-box;
   position: absolute;
   left: 45px;
@@ -50,8 +56,9 @@ h1,h2,h3,h4 {
   height: 20px;
   border-radius: 0 4px 4px 0;
 }
+
 .loader::before {
-  content: '';  
+  content: '';
   position: absolute;
   width: 1px;
   height: 10px;
@@ -63,28 +70,59 @@ h1,h2,h3,h4 {
 }
 
 @keyframes animloader {
-    0% {
-  box-shadow: 2px 0px rgba(255, 255, 255, 0), 12px 0px rgba(255, 255, 255, 0.3), 20px 0px rgba(255, 255, 255, 0);
-}
-    50% {
-  box-shadow: 2px -5px rgba(255, 255, 255, 0.5), 12px -3px rgba(255, 255, 255, 0.5), 20px -2px rgba(255, 255, 255, 0.6);
-}
-    100% {
-  box-shadow: 2px -8px rgba(255, 255, 255, 0), 12px -5px rgba(255, 255, 255, 0), 20px -5px rgba(255, 255, 255, 0);
-}
+  0% {
+    box-shadow: 2px 0px rgba(255, 255, 255, 0), 12px 0px rgba(255, 255, 255, 0.3), 20px 0px rgba(255, 255, 255, 0);
   }
+
+  50% {
+    box-shadow: 2px -5px rgba(255, 255, 255, 0.5), 12px -3px rgba(255, 255, 255, 0.5), 20px -2px rgba(255, 255, 255, 0.6);
+  }
+
+  100% {
+    box-shadow: 2px -8px rgba(255, 255, 255, 0), 12px -5px rgba(255, 255, 255, 0), 20px -5px rgba(255, 255, 255, 0);
+  }
+}
+
 /* end loading screen */
 
 
-/* contact info */
+/* start contact info */
 .contactinfo {
   height: 40px;
 }
+/* end contact info */
+
+/* start header svg */
+.elementor-shape[data-negative=false].elementor-shape-bottom,
+.elementor-shape[data-negative=true].elementor-shape-top {
+  transform: rotate(180deg);
+}
+
+.elementor-shape-bottom {
+  bottom: -3px;
+}
+
+.elementor-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+}
+
+.elementor-shape-fill {
+  fill: #fff;
+  transform-origin: center;
+  transform: rotateY(0deg);
+}
+
+/* end header svg */
 
 /* start header */
 .header {
   background-image: url(../images/home/coffee-bg.jpg);
-  height: 100vh;
+  height: 95%;
   background-size: cover;
 }
 
@@ -123,9 +161,10 @@ header .nav-link::after {
   left: 0;
   transition: 0.5s;
 }
+
 header .active::after {
   width: 100%;
-  
+
 }
 
 header .nav-link:hover::after {
@@ -166,11 +205,11 @@ header .nav-link:hover::after {
 /* end header */
 /* start À la Carte */
 
-.la_Carte h2{
+.la_Carte h2 {
   Font-size: 98px;
-Font-weight: 600;
-Line-height: 98px;
-color: var(--main-color);
+  Font-weight: 600;
+  Line-height: 98px;
+  color: var(--main-color);
 }
 
 .divider-grass {
@@ -178,7 +217,7 @@ color: var(--main-color);
   width: 50px;
 }
 
-.divider-grass .pt-vd-icon svg{
+.divider-grass .pt-vd-icon svg {
   color: #c8c4c5;
 }
 
@@ -194,7 +233,7 @@ color: var(--main-color);
 /* end À la Carte */
 
 /* start All-day Brunch */
-.Brunch .carousel-indicators button{
+.Brunch .carousel-indicators button {
   background-color: rgb(0, 0, 0);
   border-radius: 100%;
   width: 10px;
@@ -202,17 +241,17 @@ color: var(--main-color);
   margin-top: 30px;
 }
 
-.Brunch .carousel-indicators{
-margin-bottom: -40px;
+.Brunch .carousel-indicators {
+  margin-bottom: -40px;
 }
 
-.Brunch h4{
+.Brunch h4 {
   color: var(--main-color);
   Font-size: 66px;
 
-Font-weight: 600;
+  Font-weight: 600;
 
-Line-height: 66px;
+  Line-height: 66px;
 }
 
 .Brunch a {
@@ -236,45 +275,51 @@ Line-height: 66px;
   position: relative;
 
 }
-.followUs .follow{
+
+.followUs .follow {
   width: 270px;
   height: 270px;
   cursor: pointer;
   position: absolute;
 }
-.followUs .follow a{
-Font-size: 26px;
-Font-weight: 500;
-Line-height: 33.8px;
-color: var(--main-color);
+
+.followUs .follow a {
+  Font-size: 26px;
+  Font-weight: 500;
+  Line-height: 33.8px;
+  color: var(--main-color);
 }
+
 /* end followUs */
 
 /* start our story */
-.ourStory { 
+.ourStory {
   height: 120%;
 }
-.ourStory .row{ 
+
+.ourStory .row {
   height: 100vh;
 }
- .ourStory .divider-grass {
+
+.ourStory .divider-grass {
   height: 100%;
   width: 50px;
   color: #c8c4c5;
-  
+
 }
 
- .ourStory .divider-grass .pt-vd-icon svg{
+.ourStory .divider-grass .pt-vd-icon svg {
   color: #c8c4c5;
 }
 
- .ourStory .divider-grass .pt-vd-line {
+.ourStory .divider-grass .pt-vd-line {
   position: relative;
   width: 1px;
   height: 100%;
   margin-left: 12px;
   color: #c8c4c5;
 }
+
 .ourStory .spans {
   font-family: 'Jost', sans-serif;
   Font-size: 13px;
@@ -282,21 +327,25 @@ color: var(--main-color);
   Line-height: 21.58px;
   color: var(--main-color);
 }
-.ourStory .spans .line{
+
+.ourStory .spans .line {
   height: 2px;
   background-color: var(--main-color);
   width: 70px;
 }
-.ourStory h2{
-font-size: 66px;
+
+.ourStory h2 {
+  font-size: 66px;
 }
-.ourStory .container p{
+
+.ourStory .container p {
   font-family: 'Jost', sans-serif;
-    Font-size:18px;
+  Font-size: 18px;
   Font-weight: 400;
   Line-height: 29.88px;
 }
-.ourStory .container a{
+
+.ourStory .container a {
   background-color: var(--main-color);
   font-size: 14px;
   font-weight: 500;
@@ -305,13 +354,14 @@ font-size: 66px;
   transition: 0.5s;
 }
 
-.ourStory a:hover{
+.ourStory a:hover {
   margin-top: -20px;
   padding: 30px;
 }
-.ourStory img{
- border-top-left-radius:50% ;
- border-top-right-radius:50% ;
+
+.ourStory img {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 
 /* end our story */
@@ -320,18 +370,21 @@ font-size: 66px;
 .visitUs {
   background-image: url(../images/home/coffee-bg-1.jpg);
   height: 70vh;
-  background-size:cover;
+  background-size: cover;
   background-position: 20%;
-  
+
 }
+
 .visitUs svg {
   width: 100%;
-  background:none;
+  background: none;
 }
-.visitUs svg path{
+
+.visitUs svg path {
   color: white
 }
-.visitUs .spans .line{
+
+.visitUs .spans .line {
   height: 1px;
   background-color: aliceblue;
   width: 90px;
@@ -345,50 +398,57 @@ font-size: 66px;
 .visitUs h3 {
   font-size: 60px;
 }
-.visitUs p{
+
+.visitUs p {
   Font-size: 16px;
   Font-weight: 400;
   Line-height: 26.56px;
   width: 60%;
   margin-left: 250px;
 }
-.visitUs form input{
- background: none;
- border: none;
- border-bottom:1px solid rgb(255, 255, 255)  ;
-}
-.visitUs form button{
+
+.visitUs form input {
   background: none;
   border: none;
- }
-
- .visitUs input:focus{
-    /*we give him focus to when we click on the input give the elements this Properties*/
-    box-shadow: none !important;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
+
+.visitUs form button {
+  background: none;
+  border: none;
+}
+
+.visitUs input:focus {
+  /*we give him focus to when we click on the input give the elements this Properties*/
+  box-shadow: none !important;
+}
+
 ::placeholder {
-    /* to give the placeholder this properties*/
-    color:white !important;
-    text-transform: capitalize;
-     
-}
-.visitUs .agree-to-terms a{
-  color:white;
+  /* to give the placeholder this properties*/
+  color: white !important;
+  text-transform: capitalize;
+
 }
 
- .visitUs .agree-to-terms a:hover{
-   color:var(--main-color);
+.visitUs .agree-to-terms a {
+  color: white;
+}
+
+.visitUs .agree-to-terms a:hover {
+  color: var(--main-color);
 }
 
 
 /* end visit us */
 
 /* start footer */
-.footer .socialmedia a{
+.footer .socialmedia a {
   font-size: 26px;
 }
-.footer .socialmedia i:hover{
+
+.footer .socialmedia i:hover {
   transition: 1s;
-color: var(--main-color);
+  color: var(--main-color);
 }
+
 /* end footer */

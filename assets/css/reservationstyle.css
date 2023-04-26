@@ -23,6 +23,32 @@ h4 {
     --main-color: #c59764;
 }
 
+/* start header svg */
+.elementor-shape[data-negative=false].elementor-shape-bottom,
+.elementor-shape[data-negative=true].elementor-shape-top {
+  transform: rotate(180deg);
+}
+
+.elementor-shape-bottom {
+  bottom: 185px;
+}
+
+.elementor-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+}
+
+.elementor-shape-fill {
+  fill: #fff;
+  transform-origin: center;
+  transform: rotateY(0deg);
+}
+
+/* end header svg */
 
 /* start header */
 .header {
