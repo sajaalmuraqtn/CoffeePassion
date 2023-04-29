@@ -64,46 +64,61 @@ line-height: 60px;
 
 /* end header */
 
-/* start allDay */
+/* start cart */
 
-.allDay h2{
-  color: var(--main-color);
-  Font-size: 66px;
-Font-weight: 600;
-Line-height: 66px;
+/* end cart */
+
+
+
+/* start cart empty */
+.cartempty{
+  height: 50vh;
 }
-.allDay .card{
-  border: none;
+ 
+
+.carts{
+  width: 70%;
 }
-
-
-
-.allDay .card h3{
-  Font-size: 24px;
-  Font-weight: 600;
-
-  Line-height: 32.4px;
-}
-.allDay .card span{
-  Font-size: 20px;
-Font-weight: 400;
-Line-height: 33.2px;
-}
-.allDay .card p{
-  Font-size: 16px;
-  Font-weight: 400;
-  Line-height: 21.6px;
-  color: rgb(54, 54, 54);
-}
-
-.allDay .addtocart{
+.carts .total{
   background-color: var(--main-color);
-  font-size: 16px;
-  color: #fff;
-  padding: 5px;
+  width: 30%;
+}
+.cart{
+  width: 100%;
+  background-color: #c598642d;
+}
+.carts .deletefromcart{
+  background-color: red;
+  height: 50px;
+  font-size: large;
+  
+}
+.cartempty h2 {
+  font-weight: 700;
+  font-size: 80px;
+  color: var(--main-color);
+
+}
+
+.cartempty h3 {
+  font-size: 60px;
+}
+
+.cartempty a {
+  background-color: var(--main-color);
+  font-size: 30px;
+  padding: 10px;
   transition: 1s;
 }
 
+.cartempty a:hover {
+  margin-top: -50px;
+  padding: 8px;
+ color: var(--main-color);
 
 
-/* end allDay */
+}
+
+   
+
+/* end cart empty */

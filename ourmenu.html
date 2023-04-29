@@ -12,6 +12,8 @@
     <!-- my css file -->
     <link rel="stylesheet" href="./assets/css/indexstyle.css">
     <link rel="stylesheet" href="./assets/css/ourmenustyle.css">
+    <link rel="stylesheet" href="./assets/css/mediastyle.css">
+
 </head>
 
 <body>
@@ -95,7 +97,7 @@
                         </ul>
 
                         <div class="col-md-2">
-                            <a href="http://" class="btn btn-outline-light">Cart
+                            <a href="ourcart.html" class="btn btn-outline-light">Cart
                                 <i class="fa-solid fa-cart-shopping" style="color: #c59764;"></i>
                             </a>
 
@@ -111,59 +113,91 @@
     </header>
     <!-- end header -->
 
-<!-- start svg -->
-  <div class="elementor-shape elementor-shape-bottom" data-negative="false">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" preserveAspectRatio="none">
-        <path class="elementor-shape-fill"
-            d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z">
-        </path>
-    </svg>
-</div>
+    <!-- start svg -->
+    <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" preserveAspectRatio="none">
+            <path class="elementor-shape-fill"
+                d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z">
+            </path>
+        </svg>
+    </div>
 
-<!-- end svg -->
+    <!-- end svg -->
 
     <!-- start À la Carte -->
     <section class="la_Carte">
         <div class="container">
             <h2 class="mt-5 mb-5 text-center">À la Carte</h2>
-            <div class="row">
-                <div class="col-md-5">
-
-                </div>
-                <div class="pt-vertical-divider divider-grass col-md-2">
-                    <div class="pt-vd-icon icon-end">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.06 29.67">
-                            <path d="M36.53,21.85,31.78,18s-7.5.83-9.68,16.39C22.1,34.34,25.7,21.66,36.53,21.85Z"
-                                transform="translate(-5.47 -4.66)"></path>
-                            <path class="cls-1"
-                                d="M5.47,21.85,10.22,18s7.5.83,9.68,16.39C19.9,34.34,16.3,21.66,5.47,21.85Z"
-                                transform="translate(-5.47 -4.66)"></path>
-                            <polygon class="cls-1" points="15.53 0 18.66 6.56 15.53 22.16 12.39 6.56 15.53 0"></polygon>
-                        </svg>
+            <div class="d-flex justify-content-center align-items-center cartDesign">
+                <div class="col-md-5 text-center listheader  mx-5 pt-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <span class="line"></span>
+                        <span class="mx-3">BEST DRINKS</span>
+                        <span class="line"></span>
                     </div>
-                    <div class="pt-vd-line"></div>
-                    <div class="pt-vd-icon icon-end">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.06 29.67">
-                            <path d="M36.53,21.85,31.78,18s-7.5.83-9.68,16.39C22.1,34.34,25.7,21.66,36.53,21.85Z"
-                                transform="translate(-5.47 -4.66)"></path>
-                            <path class="cls-1"
-                                d="M5.47,21.85,10.22,18s7.5.83,9.68,16.39C19.9,34.34,16.3,21.66,5.47,21.85Z"
-                                transform="translate(-5.47 -4.66)"></path>
-                            <polygon class="cls-1" points="15.53 0 18.66 6.56 15.53 22.16 12.39 6.56 15.53 0"></polygon>
-                        </svg>
+                    <h3 class="text-black mt-4">COFFEES & TEAS</h3>
+                    <div id="coffeList"class="d-flex flex-column justify-content-start">
+                      
                     </div>
                 </div>
-                <div class="col-md-5">
+                <!-- start svg -->
+                <div class="elementor-column-wrap elementor-element-populated">
+                    <div class="elementor-widget-wrap">
+                        <div class="elementor-element elementor-element-4da191ef full-height elementor-widget elementor-widget-pt_vertical_divider"
+                            data-id="4da191ef" data-element_type="widget"
+                            data-widget_type="pt_vertical_divider.default">
+                            <div class="elementor-widget-container">
+
+                                <div class="pt-vertical-divider divider-grass">
+                                    <div class="pt-vd-icon icon-start"> <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 31.06 29.67">
+                                            <path
+                                                d="M36.53,21.85,31.78,18s-7.5.83-9.68,16.39C22.1,34.34,25.7,21.66,36.53,21.85Z"
+                                                transform="translate(-5.47 -4.66)"></path>
+                                            <path class="cls-1"
+                                                d="M5.47,21.85,10.22,18s7.5.83,9.68,16.39C19.9,34.34,16.3,21.66,5.47,21.85Z"
+                                                transform="translate(-5.47 -4.66)"></path>
+                                            <polygon class="cls-1"
+                                                points="15.53 0 18.66 6.56 15.53 22.16 12.39 6.56 15.53 0"></polygon>
+                                        </svg> </div>
+                                    <div class="pt-vd-line position-relative"></div>
+                                    <div class="pt-vd-icon icon-end"> <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 31.06 29.67">
+                                            <path
+                                                d="M36.53,21.85,31.78,18s-7.5.83-9.68,16.39C22.1,34.34,25.7,21.66,36.53,21.85Z"
+                                                transform="translate(-5.47 -4.66)"></path>
+                                            <path class="cls-1"
+                                                d="M5.47,21.85,10.22,18s7.5.83,9.68,16.39C19.9,34.34,16.3,21.66,5.47,21.85Z"
+                                                transform="translate(-5.47 -4.66)"></path>
+                                            <polygon class="cls-1"
+                                                points="15.53 0 18.66 6.56 15.53 22.16 12.39 6.56 15.53 0"></polygon>
+                                        </svg> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end svg -->
+                <div class="col-md-5 text-center listheader mx-5 pt-3" >
+                    <div class="d-flex justify-content-center align-items-center">
+                        <span class="line"></span>
+                        <span class="mx-3">DELICIOUS FOOD</span>
+                        <span class="line"></span>
+                    </div>
+                    <h3 class="text-black mt-4">BAKERY & LUNCH</h3>
+                    <div id="foodList" class="d-flex flex-column justify-content-start">
+                      
+                    </div>
 
                 </div>
+
             </div>
         </div>
     </section>
     <!-- end À la Carte -->
 
     <!-- start all day brunch -->
-    <section class="allDay py-5">
+    <section class="allDay py-1">
         <div class="container py-5 px-5">
             <h2 class="mt-5 mb-5 text-center">ALL DAY BRUNCH </h2>
             <div class="row d-flex justify-content-between mt-5" id="allbrunch">
@@ -177,7 +211,6 @@
 
     <!-- end all day brunch -->
 
-    <img src="../assets/images/ourmenu/food/food1.jpg" alt="">
 
     <!-- start visit us -->
     <section class="visitUs text-white position-relative">
@@ -265,6 +298,8 @@
     <script src="./vendor/js/jquery-3.6.4.min.js"></script>
     <!-- my javascript file -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/cart.js"></script>
+
 
 
 </body>

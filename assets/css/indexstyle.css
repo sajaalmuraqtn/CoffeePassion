@@ -14,7 +14,7 @@
 h1,
 h2,
 h3,
-h4 {
+h4,h5,h6 {
   font-family: 'Cormorant Garamond', serif;
   line-height: 60px;
 }
@@ -99,7 +99,7 @@ h4 {
 }
 
 .elementor-shape-bottom {
-  bottom: -3px;
+  bottom: -7px;
 }
 
 .elementor-shape {
@@ -203,7 +203,120 @@ header .nav-link:hover::after {
 }
 
 /* end header */
+
+/* start cart svg */
+.la_Carte .pt-vertical-divider .pt-vd-line:before {
+  width: 1px;
+  height: 100%;
+}
+.la_Carte .pt-vertical-divider .pt-vd-line:before, .pt-vertical-divider .pt-vd-line:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  background: currentColor;
+  content: "";
+}
+.la_Carte .elementor *, .elementor :after, .elementor :before {
+  box-sizing: border-box;
+}
+.la_Carte .pt-vertical-divider {
+  color: #dfdbdc;
+  height: 200px;
+  fill: #c8c4c5;
+
+}
+.la_Carte .elementor-element {
+  --flex-direction: initial;
+  --flex-wrap: initial;
+  --justify-content: initial;
+  --align-items: initial;
+  --align-content: initial;
+  --gap: initial;
+  --flex-basis: initial;
+  --flex-grow: initial;
+  --flex-shrink: initial;
+  --order: initial;
+  --align-self: initial;
+  flex-basis: var(--flex-basis);
+  flex-grow: var(--flex-grow);
+  flex-shrink: var(--flex-shrink);
+  order: var(--order);
+  align-self: var(--align-self);
+}
+
+.la_Carte .divider-grass .pt-vd-icon svg {
+  color: #c8c4c5;
+}
+
+.la_Carte .elementor-widget-pt_vertical_divider.full-height, .elementor-widget-pt_vertical_divider.full-height .elementor-widget-container, .elementor-widget-pt_vertical_divider.full-height .pt-vertical-divider {
+  height: 100%;
+  position: relative;
+  
+}
+.la_Carte .pt-vertical-divider .pt-vd-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 100%;
+}
+.la_Carte .elementor-widget-pt_vertical_divider.full-height, .elementor-widget-pt_vertical_divider.full-height .elementor-widget-container, .elementor-widget-pt_vertical_divider.full-height .pt-vertical-divider {
+  height: 102%;
+}
+.la_Carte .elementor *, .elementor :after, .elementor :before {
+  box-sizing: border-box;
+}
+.la_Carte .pt-vertical-divider {
+  color: #dfdbdc;
+  height: 200px;
+}
+.la_Carte .pt-vertical-divider .pt-vd-icon {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 33px;
+  color: #c8c4c5;
+  
+}
+.la_Carte .pt-vertical-divider.divider-grass .pt-vd-icon.icon-end {
+  -webkit-transform: translateX(-50%) rotate(180deg);
+  -ms-transform: translateX(-50%) rotate(180deg);
+  transform: translateX(-50%) rotate(180deg);
+}
+.la_Carte .pt-vertical-divider .pt-vd-icon.icon-end {
+  bottom: 0;
+}
+.la_Carte .pt-vertical-divider .pt-vd-icon {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 33px;
+  color: #c8c4c5;
+}
+/* end cart svg */
+
+
+
+
+
 /* start À la Carte */
+.la_Carte .cartDesign{
+  height: 100vh;
+
+}
 
 .la_Carte h2 {
   Font-size: 98px;
@@ -211,24 +324,60 @@ header .nav-link:hover::after {
   Line-height: 98px;
   color: var(--main-color);
 }
-
-.divider-grass {
-  height: 1000px;
-  width: 50px;
+.la_Carte .listheader{
+  color: var(--main-color);
+}
+.la_Carte .listheader span{
+  Font-size: 13px;
+Font-weight: 600;
+Line-height: 21.58px;
+}
+.la_Carte .listheader .line{
+  height: 1px;
+  background-color: var(--main-color);
+  width: 90px;
+}
+.la_Carte .listheader h3{
+Font-size: 40px;
+Font-weight: 600;
+Line-height: 40px;
 }
 
-.divider-grass .pt-vd-icon svg {
-  color: #c8c4c5;
+.cart .contentTitle h6{
+  Font-size: 24px;
+Font-weight: 600;
+Line-height: 32.4px;
+}
+.cart .contentTitle span{
+  Font-size: 16px;
+Font-weight: 400;
+Line-height: 25.6px;
+color: #c8c4c5;
+}
+.cart .contentTitle .price{
+  Font-size: 20px;
+  Font-weight: 400;
+  Line-height: 33.2px;
+  color: #363636;
+}
+.cart .contentTitle .line2{
+  width: 60px;
+  border-bottom: 1px solid #c8c4c5;
+  border-top: 1px solid #c8c4c5;
+  height: 5px;
 }
 
-.divider-grass .pt-vd-line {
-  position: relative;
-  width: 1px;
-  height: 100%;
-  margin-left: 12px;
-  background-color: #c8c4c5;
+.addtocart{
+  background-color: var(--main-color);
+  font-size: 10px;
+  color: #fff;
+  padding: 5px;
+  transition: 0.9s;
 }
-
+.addtocart:hover {
+  padding: 6px;
+ color: var(--main-color);
+}
 
 /* end À la Carte */
 
@@ -267,6 +416,10 @@ header .nav-link:hover::after {
   margin-top: -20px;
   padding: 7px;
 }
+.brunchmedia{
+  height: 0;
+  visibility: hidden;
+}
 
 /* end All-day Brunch */
 
@@ -301,24 +454,6 @@ header .nav-link:hover::after {
   height: 100vh;
 }
 
-.ourStory .divider-grass {
-  height: 100%;
-  width: 50px;
-  color: #c8c4c5;
-
-}
-
-.ourStory .divider-grass .pt-vd-icon svg {
-  color: #c8c4c5;
-}
-
-.ourStory .divider-grass .pt-vd-line {
-  position: relative;
-  width: 1px;
-  height: 100%;
-  margin-left: 12px;
-  color: #c8c4c5;
-}
 
 .ourStory .spans {
   font-family: 'Jost', sans-serif;
@@ -362,9 +497,132 @@ header .nav-link:hover::after {
 .ourStory img {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  width:85%; 
+  height:85%
 }
 
+
 /* end our story */
+
+
+/* start our story svg  */
+
+.ourStory .pt-vertical-divider .pt-vd-line:before {
+  width: 1px;
+  height: 100%;
+}
+.ourStory .pt-vertical-divider .pt-vd-line:before, .pt-vertical-divider .pt-vd-line:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  background: currentColor;
+  content: "";
+}
+.ourStory .elementor *, .elementor :after, .elementor :before {
+  box-sizing: border-box;
+}
+.ourStory .pt-vertical-divider {
+  color: #dfdbdc;
+  height: 200px;
+  fill: #c8c4c5;
+
+}
+.ourStory .elementor-element {
+  --flex-direction: initial;
+  --flex-wrap: initial;
+  --justify-content: initial;
+  --align-items: initial;
+  --align-content: initial;
+  --gap: initial;
+  --flex-basis: initial;
+  --flex-grow: initial;
+  --flex-shrink: initial;
+  --order: initial;
+  --align-self: initial;
+  flex-basis: var(--flex-basis);
+  flex-grow: var(--flex-grow);
+  flex-shrink: var(--flex-shrink);
+  order: var(--order);
+  align-self: var(--align-self);
+}
+
+.ourStory .divider-grass .pt-vd-icon svg {
+  color: #c8c4c5;
+}
+
+.ourStory .elementor-widget-pt_vertical_divider.full-height, .elementor-widget-pt_vertical_divider.full-height .elementor-widget-container, .elementor-widget-pt_vertical_divider.full-height .pt-vertical-divider {
+  height: 100%;
+  position: relative;
+  
+}
+.ourStory .pt-vertical-divider .pt-vd-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 97%;
+}
+.ourStory .elementor-widget-pt_vertical_divider.full-height, .elementor-widget-pt_vertical_divider.full-height .elementor-widget-container, .elementor-widget-pt_vertical_divider.full-height .pt-vertical-divider {
+  height: 98%;
+}
+.ourStory .elementor *, .elementor :after, .elementor :before {
+  box-sizing: border-box;
+}
+.ourStory .pt-vertical-divider {
+  color: #dfdbdc;
+  height: 200px;
+}
+.ourStory .pt-vertical-divider .pt-vd-icon {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 33px;
+  color: #c8c4c5;
+  
+}
+.ourStory .pt-vertical-divider.divider-grass .pt-vd-icon.icon-end {
+  -webkit-transform: translateX(-50%) rotate(180deg);
+  -ms-transform: translateX(-50%) rotate(180deg);
+  transform: translateX(-50%) rotate(180deg);
+}
+.ourStory .pt-vertical-divider .pt-vd-icon.icon-end {
+  bottom: 0;
+}
+.ourStory .pt-vertical-divider .pt-vd-icon {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 33px;
+  color: #c8c4c5;
+}
+
+/* end our story svg */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* start visit us */
 .visitUs {

@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESERVATION</title>
+    <title>Cart</title>
     <!-- fonts css -->
     <link rel="stylesheet" href="./vendor/css/all.min.css">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
     <!-- my css file -->
     <link rel="stylesheet" href="./assets/css/indexstyle.css">
-    <link rel="stylesheet" href="./assets/css/reservationstyle.css">
+    <link rel="stylesheet" href="./assets/css/ourcartstyle.css">
     <link rel="stylesheet" href="./assets/css/mediastyle.css">
 
 </head>
 
 <body>
-
     <!-- start contact info -->
     <div class="contactinfo bg-black text-white">
         <div class="container pt-2">
@@ -80,9 +79,10 @@
 
                     <div class="collapse navbar-collapse " id="navbarNav">
 
+
                         <ul class="navbar-nav col-md-10 d-flex justify-content-center">
                             <li class="nav-item mx-2">
-                                <a class="nav-link  text-white" aria-current="page" href="index.html">HOME</a>
+                                <a class="nav-link text-white" aria-current="page" href="index.html">HOME</a>
                             </li>
                             <li class="nav-item mx-3">
                                 <a class="nav-link text-white" href="about.html">ABOUT</a>
@@ -108,13 +108,15 @@
                 </div>
             </nav>
             <!-- end nav bar -->
-            <h1 class="fw-bolder mx-4 text-white text-center align-self-center">RESERVATION</h1>
+            <h1 class="fw-bolder mx-4 text-white text-center align-self-center">CART <i
+                    class="fa-solid fa-cart-shopping" style="color: #c59764;"></i>
+            </h1>
 
     </header>
     <!-- end header -->
 
-     <!-- start svg -->
-     <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+    <!-- start svg -->
+    <div class="elementor-shape elementor-shape-bottom" data-negative="false">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" preserveAspectRatio="none">
             <path class="elementor-shape-fill"
                 d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z">
@@ -123,68 +125,21 @@
     </div>
 
     <!-- end svg -->
-
-    <!-- start contact -->
-    <div class="ONLINERESERVATION" id="contact">
-        <div class="container py-5">
-            <div class="d-flex justify-content-center">
-                <div class="title text-center">
-                    <span>ONLINE RESERVATION</span>
-                    <h2 class="mt-3">Book A Table</h2>
-                </div>
-
+    <!-- start cart -->
+    <section class="my_cart" onload="getCarts() ">
+        <div class="container d-flex justify-content-center">
+            <div class="carts d-flex justify-content-center flex-column p-5" id="cart">
+                
+                <button class="btn btn-outline-light deletefromcart mt-5 " id="deleteAll" onclick="deleteAll()">DELETE ALL
+                    <i class="fa-solid fa-cart-shopping" style="color: #000;"></i></button>
+                <h4 class="total mt-3 text-white px-1 fw-bolder" id="total">Total Price : <span
+                        class="text-large">20</span> $</h4>
             </div>
-            <p class="py-4 w-55 mx-5 text-center">Closed Sunday night, Mondays & Tuesdays. Due to the vast
-                amount of no-shows, all bookings must now be secured with a credit card which will be charged $20 if you
-                do not show up for your booking.
 
-            </p>
-            <form class="w-75 m-auto pt-3 text-center">
-                <div class="row">
-                    <div class="mb-3 col-md-4">
-                        <select id="persons" class="form-select border-0 border-bottom ">
-                            <option>Person 1</option>
-                        </select>
-                    </div>
-                    <div class="mb-3 col-md-4">
-                        <input type="date" class="form-control border-0 border-bottom  rounded-0 " placeholder="email"
-                            id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 col-md-4">
-                        <select id="time" class="form-select border-0 border-bottom  rounded-0">
-                            <option>Disabled select</option>
-                        </select>
-                    </div>
-
-                </div>
-                <div class="row mt-5">
-                    <div class="mb-3 col-md-4">
-                        <input type="text" class="form-control bg-transparent  border-0 border-bottom  rounded-0 "
-                            placeholder="Your Name" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3 col-md-4">
-                        <input type="email" class="form-control bg-transparent  border-0 border-bottom  rounded-0 "
-                            placeholder="email" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 col-md-4">
-
-                        <input type="number" class="form-control bg-transparent  border-0  border-bottom  rounded-0"
-                            placeholder="Phone" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-5 mt-3">
-                        <textarea name="message" id=""
-                            class="form-control bg-transparent   border-0 border-bottom  rounded-0 " rows="5"
-                            placeholder="special requests"></textarea>
-                    </div>
-                </div>
-                <a href="" class="mt-4 py-3 text-capatlize text-decoration-none px-5 fw-semibold text-white">ORDER
-                    ONLINE</a>
-
-            </form>
-        </div>
+    </section>
     </div>
+    <!-- end cart -->
 
-    <!-- end contact -->
 
     <!-- start visit us -->
     <section class="visitUs text-white position-relative">
@@ -268,9 +223,11 @@
 
     <!-- javascript bootstrap -->
     <script src="./vendor/js/bootstrap.bundle.min.js"></script>
-
     <!-- javascript jquery -->
     <script src="./vendor/js/jquery-3.6.4.min.js"></script>
+    <!-- my javascript file -->
+    <script src="./assets/js/cart.js"></script>
+
 
 </body>
 
