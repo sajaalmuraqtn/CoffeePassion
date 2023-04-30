@@ -1,0 +1,262 @@
+@media (max-width:991px) {
+
+  /* start svg */
+  .elementor-column-wrap {
+    display: none;
+  }
+
+  /* end svg */
+
+  /* start header */
+  .contactinfo {
+    height: 0px;
+    visibility: hidden;
+  }
+
+  .navbar-toggler-icon {
+    color: aliceblue;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLF0hsFCycmCwHw4IDWXPcODM5YIDlg5vljmLRzhy98KOWlv5eG-7E1E29ghJ_Zz15vdw&usqp=CAU);
+    border: none;
+  }
+
+  .navbar {
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .navbar li,
+  .navbar a {
+    margin-top: 10px;
+  }
+
+  .navbar li:hover {
+    color: black;
+    font-weight: bolder;
+  }
+
+  header .nav-link::after {
+    content: '';
+    background: none;
+  }
+
+  .headerContent .coffee span {
+    width: 40px;
+    font-weight: 700;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .headerContent h3 {
+    font-size: 30px;
+  }
+
+  .headerContent a {
+    padding: 5px;
+  }
+
+  /* end header */
+
+  /* start la Carte */
+  .la_Carte {
+    height: 285vh;
+  }
+
+  .cartDesign {
+    height: 100%;
+    margin-top: 750px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .la_Carte h2 {
+    Font-size: 58px;
+    margin-bottom: -40px;
+  }
+
+  .la_Carte .listheader span {
+    Font-size: 13px;
+    Font-weight: 600;
+    Line-height: 21.58px;
+  }
+
+  .la_Carte .listheader .line {
+    height: 1px;
+    background-color: var(--main-color);
+    width: 90px;
+  }
+
+  .la_Carte .listheader h3 {
+    Font-size: 30px;
+    Font-weight: 600;
+    Line-height: 40px;
+  }
+
+  .cart .contentTitle h6 {
+    Font-size: 16px;
+    Font-weight: 600;
+    Line-height: 32.4px;
+  }
+
+  .cart .contentTitle span {
+    Font-size: 10px;
+
+  }
+
+  .cart .contentTitle .price {
+    Font-size: 20px;
+    Font-weight: 400;
+    Line-height: 33.2px;
+    color: #363636;
+  }
+  .cart .contentTitle .price {
+    Font-size: 20px;
+    Font-weight: 400;
+    Line-height: 33.2px;
+    color: #363636;
+  }
+  .cart .contentTitle .addtocart {
+   width: 100%;
+   margin-top: 20px;
+  }
+
+
+
+
+  /* end la Carte */
+
+  /* start brunch */
+
+  .brunch #carouselExampleIndicators {
+    display: none;
+  }
+
+  .brunch #carouselExampleIndicators1 {
+    display: block;
+  }
+
+  .brunch {
+    padding-top: 80px;
+    font-size: 30px;
+  }
+
+  .brunch h4 {
+    margin-top: 80px;
+    font-size: 30px;
+  }
+
+  /* end brunch */
+  /* start follow us */
+  .followUs {
+    width: 100%;
+    padding-top: 200px;
+
+  }
+
+  .followUs div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .followUs img {
+    width: 120px;
+  }
+
+  .followUs .follow {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .followUs .follow a {
+    Font-size: 16px;
+    Font-weight: 500;
+    Line-height: 33.8px;
+    color: var(--main-color);
+  }
+
+  /*      
+      .followUsMedia{
+        visibility: visible;
+        height: 100vh;
+        width: 50%;
+        padding-top: 100px;
+      }
+      */
+
+
+  /* end follow us */
+  /* start our story*/
+  
+  .ourStory {
+    height: 130%;
+    text-align: start;
+  }
+
+  .ourStory .row {
+    height: 100vh;
+  }
+
+  .ourStory h2 {
+    font-size: 56px;
+  }
+
+  .ourStory img {
+    width: 85%;
+    height: 44%;
+    margin-left: 10px;
+    margin-bottom: 40px;
+
+  }
+
+  /* end our story */
+  /* start visit us */
+  .visitUs {
+    background-position: 40%;
+    height: 90vh;
+   
+  }
+  .visitUs .container {
+    margin-top: 90px;
+
+  }
+  .visitUs .spans {
+    margin-top: 70px;
+    width: 80%;
+    align-self: center;
+
+  }
+
+  .visitUs h3 {
+    font-size: 30px;
+  }
+
+
+  .visitUs p {
+    Font-size: 20px;
+    Font-weight: 400;
+    Line-height: 26.56px;
+    width: 90%;
+    margin-left: 20px;
+  }
+
+
+
+  /* end visit us */
+
+  .footer .socialmedia i:hover {
+    transition: 1s;
+    color: var(--main-color);
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  /* end footer */
+}

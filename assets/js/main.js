@@ -187,7 +187,7 @@ function getBranch() {
     for (let index = 0; index < brunch.length; index++) {
 
         document.getElementById("allbrunch").innerHTML += `
-    <div class="card col-md-4" style="width:33%;">
+    <div class="card col-md-4" >
     <img src="${brunch[index].imgsrc}" class="card-img-top pt-2" alt="...">
     <div class="card-body">
     <div class="d-flex justify-content-between align-items-center">

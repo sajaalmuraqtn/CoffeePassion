@@ -79,7 +79,7 @@ function deleteAll() {
     cartDiv.innerHTML = `
       <div class="cartempty text-center d-flex align-items-center flex-column justify-content-between py-5">
       <h2 class=""> Your Cart Is Empty </h2>
-      <h3>let fill it<i class="fa-solid fa-arrow-right-long fa-beat mx-5" style="color: #c59764;"></i></span>
+      <h3>let fill it <i class="fa-solid fa-arrow-right-long fa-beat mx-5" style="color: #c59764;"></i></span>
       <a href="ourmenu.html" class="btn btn-outline-light">MENU
           <i class="fa-solid fa-utensils fa-spin mx-3" style="color: #340f0f;"></i>        
             </a>
