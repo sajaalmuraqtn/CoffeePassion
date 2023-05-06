@@ -1,7 +1,7 @@
 var carts = [];
 
 
-var brunch = [
+var branch = [
     {
         imgSrc: `../assets/images/home/branch/img-1.jpg`,
         name: "Spaghetti alla Puttanesca"
@@ -137,7 +137,7 @@ var menuFood = [
 ];
 
 
-localStorage.setItem("brunsh",JSON.stringify(brunch));
+localStorage.setItem("branch",JSON.stringify(branch));
 localStorage.setItem("menuFood",JSON.stringify(menuFood));
 
 
@@ -187,17 +187,17 @@ function getFoodAndCoffee() {
 
 function getBranch() {
 
-    for (let index = 0; index < brunch.length; index++) {
+    for (let index = 0; index < branch.length; index++) {
 
         document.getElementById("allbrunch").innerHTML += `
     <div class="card col-md-4" >
-    <img src="${brunch[index].imgSrc}" class="card-img-top pt-2" alt="...">
+    <img src="${branch[index].imgSrc}" class="card-img-top pt-2" alt="...">
     <div class="card-body">
     <div class="d-flex justify-content-between align-items-center">
-                            <h3>${brunch[index].name} </h3>
-                            <span>${brunch[index].price} </span>
+                            <h3>${branch[index].name} </h3>
+                            <span>${branch[index].price} </span>
                             </div>
-                        <p class="card-text">${brunch[index].description} </p>
+                        <p class="card-text">${branch[index].description} </p>
                     </div>
                     <button class="btn btn-outline-light addtocart  mb-3" onclick="addToCartBranch(${index})">ADD TO
           <i class="fa-solid fa-cart-shopping" style="color: #000;"></i></button>

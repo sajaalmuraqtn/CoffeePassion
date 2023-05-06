@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./vendor/css/all.min.css">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/css/sweetalert2.css">
+
     <!-- my css file -->
     <link rel="stylesheet" href="./assets/css/indexstyle.css">
     <link rel="stylesheet" href="./assets/css/ourcartstyle.css">
@@ -18,7 +20,7 @@
 
 </head>
 
-<body>
+<body onload="displayCarts()">
     <!-- start contact info -->
     <div class="contactinfo bg-black text-white">
         <div class="container pt-2">
@@ -131,29 +133,10 @@
     <section class="my_cart">
         <div class="container d-flex justify-content-center flex-column pt-5" id="carts">
             <div class="cart py-3 d-flex justify-content-evenly text-start ">
-                <img src="./assets/images/ourmenu/coffee/coffee-5-2.jpg" class="text-start " height="70px"
-                    width="80px" alt="${carts[index].name}">
-                <div class="contentTitle text-start mx-3 ">
-                    <div class="d-flex align-items-center  text-start">
-                        <h6>Double Shot Espresso</h6>
-                        <span class="line2 mx-2"></span>
-                        <span class="price">202</span>
-                    </div>
-                    <span class="description">Espresso, Double Shorts.</span>
-                </div>
-                <button class="btn btn-outline-light deletefromcart mt-1 " id="deletecart">DELETE From
-                    <i class="fa-solid fa-cart-shopping" style="color: #000;"></i></button>
+
             </div>
             
-            <!-- <div class="carts d-flex justify-content-center flex-column p-5" id="cart">
-
-             
-            </div>
-
-            <button class="btn btn-outline-light deletefromcart mt-5 " id="deleteAll" onclick="deleteAll()">DELETE ALL
-                <i class="fa-solid fa-cart-shopping" style="color: #000;"></i></button>
-            <h4 class="total mt-3 text-white px-1 fw-bolder" id="total">Total Price : <span class="text-large">20</span>
-                $</h4> -->
+           
         </div>
 
     </section>
@@ -244,6 +227,8 @@
     <script src="./vendor/js/bootstrap.bundle.min.js"></script>
     <!-- javascript jquery -->
     <script src="./vendor/js/jquery-3.6.4.min.js"></script>
+    <script src="./vendor/js/sweetalert2.min.js"></script>
+
     <!-- my javascript file -->
     <script src="./assets/js/cart.js"></script>
 

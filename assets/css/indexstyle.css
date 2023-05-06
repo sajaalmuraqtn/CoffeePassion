@@ -436,7 +436,11 @@ color: #c8c4c5;
 /* start followUs */
 .followUs {
   position: relative;
+  display: flex;
 
+}
+.followUsMedia{
+  display: none;
 }
 
 .followUs .follow {
@@ -630,6 +634,7 @@ color: #c8c4c5;
   background-position: 20%;
 
 }
+
 
 .visitUs svg {
   width: 100%;

@@ -152,43 +152,22 @@
   /* end brunch */
   /* start follow us */
   .followUs {
-    width: 100%;
-    padding-top: 200px;
-
+    display: none;  
   }
-
-  .followUs div {
+  .followUsMedia{
     display: flex;
-    flex-direction: row;
+    text-align: center;
+  
   }
 
-  .followUs img {
-    width: 120px;
+  .followUsMedia .follow {
+     width: 120px;
+     height: 120px;
+   
   }
-
-  .followUs .follow {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    position: absolute;
+  .followUsMedia .follow a {
+font-size: large;
   }
-
-  .followUs .follow a {
-    Font-size: 16px;
-    Font-weight: 500;
-    Line-height: 33.8px;
-    color: var(--main-color);
-  }
-
-  /*      
-      .followUsMedia{
-        visibility: visible;
-        height: 100vh;
-        width: 50%;
-        padding-top: 100px;
-      }
-      */
-
 
   /* end follow us */
   /* start our story*/
@@ -259,4 +238,9 @@
   }
 
   /* end footer */
+}
+
+
+@media (max-width:768px) {
+
 }
