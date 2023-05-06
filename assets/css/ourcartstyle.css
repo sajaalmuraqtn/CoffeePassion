@@ -76,10 +76,10 @@ line-height: 60px;
 }
  
 
-.carts{
+#carts{
   width: 70%;
 }
-.carts .total{
+#carts .total{
   background-color: var(--main-color);
   width: 30%;
 }
@@ -87,7 +87,7 @@ line-height: 60px;
   width: 100%;
   background-color: #c598642d;
 }
-.carts .deletefromcart{
+#carts .deletefromcart{
   background-color: red;
   height: 50px;
   font-size: large;
@@ -112,10 +112,8 @@ line-height: 60px;
 }
 
 .cartempty a:hover {
-  margin-top: -50px;
-  padding: 8px;
+  margin-top: -5px;
  color: var(--main-color);
-
 
 }
 
